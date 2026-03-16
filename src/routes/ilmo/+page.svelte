@@ -26,6 +26,57 @@
 		</div>
 	</section>
 
+	<!-- Kooslab Highlights -->
+	<section class="mb-12">
+		<h2
+			class="mb-4 text-2xl text-stone-800"
+			style="font-family: 'Fraunces', serif; font-weight: 500;"
+		>
+			{getLang() === 'en' ? 'Kooslab: Custom Digital Solutions' : 'Kooslab: Maßgeschneiderte Digitallösungen'}
+		</h2>
+		<div class="rounded-lg border border-stone-200 bg-white p-6">
+			<p class="mb-4 text-stone-600" style="font-family: 'Source Serif 4', serif;">
+				{getLang() === 'en'
+					? 'Empowering small teams to make big leaps through precision-built software solutions and automation.'
+					: 'Befähigung kleiner Teams zu großen Sprüngen durch präzise entwickelte Softwarelösungen und Automatisierung.'}
+			</p>
+
+			<div class="mb-4">
+				<h4 class="mb-2 text-sm font-medium text-stone-700" style="font-family: 'Fraunces', serif;">
+					{getLang() === 'en' ? 'SaaS Products' : 'SaaS-Produkte'}
+				</h4>
+				<div class="flex flex-wrap gap-2">
+					{#each ['eQuest', getLang() === 'en' ? 'Requirements Management (AI-assisted)' : 'Anforderungsmanagement (KI-gestützt)', getLang() === 'en' ? 'Quotation Tool' : 'Angebots-Tool'] as product}
+						<span class="rounded-full bg-stone-100 px-3 py-1 text-xs text-stone-600" style="font-family: 'Fraunces', serif;">
+							{product}
+						</span>
+					{/each}
+				</div>
+			</div>
+
+			<div>
+				<h4 class="mb-2 text-sm font-medium text-stone-700" style="font-family: 'Fraunces', serif;">
+					{getLang() === 'en' ? 'Proven Results' : 'Nachgewiesene Ergebnisse'}
+				</h4>
+				<ul class="space-y-1 text-sm text-stone-600" style="font-family: 'Source Serif 4', serif;">
+					<li>{getLang() === 'en' ? '• 80% reduction in documentation time' : '• 80% Reduzierung der Dokumentationszeit'}</li>
+					<li>{getLang() === 'en' ? '• 40% revenue increase for clients' : '• 40% Umsatzsteigerung für Kunden'}</li>
+					<li>{getLang() === 'en' ? '• 9+ custom solutions delivered' : '• 9+ maßgeschneiderte Lösungen geliefert'}</li>
+				</ul>
+			</div>
+
+			<a
+				href="https://koostory.net"
+				target="_blank"
+				rel="noopener noreferrer"
+				class="mt-4 inline-block text-sm text-stone-500 underline hover:text-stone-800"
+				style="font-family: 'Fraunces', serif;"
+			>
+				koostory.net
+			</a>
+		</div>
+	</section>
+
 	<!-- Specialties -->
 	<section class="mb-12">
 		<h2
