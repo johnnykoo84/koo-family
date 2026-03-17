@@ -17,11 +17,6 @@
 	class="min-h-screen"
 	style="background: linear-gradient(180deg, #FDF8F3 0%, #F9F1E8 50%, #FDF8F3 100%);"
 >
-	<!-- Decorative grain overlay -->
-	<div
-		class="pointer-events-none fixed inset-0 opacity-30"
-		style="background-image: url('data:image/svg+xml,%3Csvg viewBox=%220 0 200 200%22 xmlns=%22http://www.w3.org/2000/svg%22%3E%3Cfilter id=%22noise%22%3E%3CfeTurbulence type=%22fractalNoise%22 baseFrequency=%220.9%22 numOctaves=%223%22 stitchTiles=%22stitch%22/%3E%3C/filter%3E%3Crect width=%22100%25%22 height=%22100%25%22 filter=%22url(%23noise)%22/%3E%3C/svg%3E');"
-	></div>
 
 	<!-- Hero Section -->
 	<header class="relative px-6 pt-24 pb-16 md:pt-32">
@@ -105,10 +100,12 @@
 						class="overflow-hidden rounded-sm bg-white transition-all duration-500 group-hover:shadow-2xl"
 						style="box-shadow: 0 10px 40px -10px rgba(0,0,0,0.1);"
 					>
-						<div
-							class="flex aspect-square items-center justify-center border-b border-dashed border-stone-200 bg-gradient-to-br from-stone-50 to-stone-100"
-						>
-							<span class="text-xs tracking-[0.3em] text-stone-400">PHOTO</span>
+						<div class="overflow-hidden">
+							<img
+								src="/photos/ilmo_10.JPG"
+								alt={t.ilmoName}
+								class="w-full transition-transform duration-500 group-hover:scale-105"
+							/>
 						</div>
 						<div class="p-6">
 							<h3
@@ -142,10 +139,12 @@
 						class="overflow-hidden rounded-sm bg-white transition-all duration-500 group-hover:shadow-2xl"
 						style="box-shadow: 0 10px 40px -10px rgba(0,0,0,0.1);"
 					>
-						<div
-							class="flex aspect-square items-center justify-center border-b border-dashed border-stone-200 bg-gradient-to-br from-rose-50 to-stone-50"
-						>
-							<span class="text-xs tracking-[0.3em] text-stone-400">PHOTO</span>
+						<div class="overflow-hidden">
+							<img
+								src="/photos/kyuree_01.jpeg"
+								alt={t.kyureeName}
+								class="w-full transition-transform duration-500 group-hover:scale-105"
+							/>
 						</div>
 						<div class="p-6">
 							<h3

@@ -77,12 +77,12 @@ export const t = {
 		return 'Kyuree Kawk';
 	},
 	get kyureeRole() {
-		return currentLang === 'en' ? 'Wife & Jewelry Designer' : 'Ehefrau & Schmuckdesignerin';
+		return currentLang === 'en' ? 'Wife & Fashion Designer' : 'Ehefrau & Modedesignerin';
 	},
 	get kyureeDesc() {
 		return currentLang === 'en'
-			? 'I dedicate most of my time to raising our two wonderful daughters. In my free time, I design and create jewelry - a creative passion that brings me joy.'
-			: 'Ich widme die meiste Zeit der Erziehung unserer zwei wunderbaren Töchter. In meiner Freizeit entwerfe und fertige ich Schmuck - eine kreative Leidenschaft, die mir Freude bereitet.';
+			? 'I run my own fashion brand Breha, designing and selling clothing for 6 years. I also create jewelry under my brand September Nuvo. My fine arts background inspires everything I create.'
+			: 'Ich führe meine eigene Modemarke Breha und entwerfe und verkaufe seit 6 Jahren Kleidung. Außerdem kreiere ich Schmuck unter meiner Marke September Nuvo. Mein künstlerischer Hintergrund inspiriert alles, was ich schaffe.';
 	},
 
 	// Jane

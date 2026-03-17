@@ -14,6 +14,7 @@
 	});
 
 	const familyMembers = [
+		{ name: 'Family', path: '/family' },
 		{ name: 'Ilmo', path: '/ilmo' },
 		{ name: 'Kyuree', path: '/kyuree' },
 		{ name: 'Jane', path: '/jane' },

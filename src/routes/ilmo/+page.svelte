@@ -1,9 +1,43 @@
 <script lang="ts">
 	import PersonPage from '$lib/components/PersonPage.svelte';
 	import { t, getLang } from '$lib/i18n.svelte';
+
+	const photos = [
+		{ src: '/photos/ilmo_01.JPG' },
+		{ src: '/photos/ilmo_02.jpeg' },
+		{ src: '/photos/ilmo_03.jpeg' },
+		{ src: '/photos/ilmo_04.jpeg' },
+		{ src: '/photos/ilmo_05.jpeg' },
+		{ src: '/photos/ilmo_06.JPG' },
+		{ src: '/photos/ilmo_07.JPG' },
+		{ src: '/photos/ilmo_08.jpeg' },
+		{ src: '/photos/ilmo_09.jpeg' },
+		{ src: '/photos/ilmo_10.JPG' }
+	];
 </script>
 
-<PersonPage name={t.ilmoName} role={t.ilmoRole} accentColor="#C4785A">
+<PersonPage name={t.ilmoName} role={t.ilmoRole} accentColor="#C4785A" photo="/photos/ilmo_10.JPG">
+	<!-- Photo Gallery -->
+	<section class="mb-12">
+		<h2
+			class="mb-6 text-2xl text-stone-800"
+			style="font-family: 'Fraunces', serif; font-weight: 500;"
+		>
+			{getLang() === 'en' ? 'Gallery' : 'Galerie'}
+		</h2>
+		<div class="grid gap-4 grid-cols-2 sm:grid-cols-3">
+			{#each photos.slice(0, 6) as photo}
+				<div class="overflow-hidden rounded-lg shadow-md">
+					<img
+						src={photo.src}
+						alt="Ilmo Koo"
+						class="w-full"
+					/>
+				</div>
+			{/each}
+		</div>
+	</section>
+
 	<!-- About -->
 	<section class="mb-12">
 		<h2
@@ -123,13 +157,13 @@
 						: 'Software-Anforderungsberatung für KMUs. Unterstützung von Unternehmen beim Aufbau der richtigen Software durch klare Anforderungsdefinition, Überbrückung der Lücke zwischen Geschäftsanforderungen und Entwicklungsteams.'}
 				</p>
 				<a
-					href="https://kooslab.net"
+					href="https://koostory.net"
 					target="_blank"
 					rel="noopener noreferrer"
 					class="mt-2 inline-block text-sm text-stone-500 underline hover:text-stone-800"
 					style="font-family: 'Fraunces', serif;"
 				>
-					kooslab.net
+					koostory.net
 				</a>
 			</div>
 
@@ -248,13 +282,29 @@
 		>
 			{getLang() === 'en' ? 'Education' : 'Ausbildung'}
 		</h2>
-		<div class="border-l-2 border-stone-200 pl-6">
-			<h3 class="text-lg font-medium text-stone-800" style="font-family: 'Fraunces', serif;">
-				B.S. Aerospace Engineering
-			</h3>
-			<p class="text-sm text-stone-500" style="font-family: 'Fraunces', serif;">
-				University of Maryland, College Park · 2005 - 2008
-			</p>
+		<div class="space-y-6">
+			<div class="border-l-2 border-stone-200 pl-6">
+				<h3 class="text-lg font-medium text-stone-800" style="font-family: 'Fraunces', serif;">
+					{getLang() === 'en' ? 'M.S. Aerospace Engineering (Discontinued)' : 'M.S. Luft- und Raumfahrttechnik (Abgebrochen)'}
+				</h3>
+				<p class="text-sm text-stone-500" style="font-family: 'Fraunces', serif;">
+					University of Maryland, Smart Structure & Material Lab · 2008 - 2010
+				</p>
+				<p class="mt-2 text-stone-600" style="font-family: 'Source Serif 4', serif;">
+					{getLang() === 'en'
+						? 'Awarded full stipend scholarship for graduate research on MAV (Micro Air Vehicle) sensors and actuators. Unfortunately had to discontinue to fulfill mandatory military service in South Korea.'
+						: 'Vollstipendium für Forschung an MAV-Sensoren (Micro Air Vehicle) und Aktoren erhalten. Musste leider abbrechen, um den Wehrdienst in Südkorea zu absolvieren.'}
+				</p>
+			</div>
+
+			<div class="border-l-2 border-stone-200 pl-6">
+				<h3 class="text-lg font-medium text-stone-800" style="font-family: 'Fraunces', serif;">
+					B.S. Aerospace Engineering
+				</h3>
+				<p class="text-sm text-stone-500" style="font-family: 'Fraunces', serif;">
+					University of Maryland, College Park · 2005 - 2008
+				</p>
+			</div>
 		</div>
 	</section>
 

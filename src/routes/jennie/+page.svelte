@@ -1,9 +1,69 @@
 <script lang="ts">
 	import PersonPage from '$lib/components/PersonPage.svelte';
 	import { t, getLang } from '$lib/i18n.svelte';
+
+	const photos = [
+		{
+			src: '/photos/jennie_01.JPG',
+			en: 'Our cheerful Jennie',
+			de: 'Unsere fröhliche Jennie'
+		},
+		{
+			src: '/photos/jennie_02.JPG',
+			en: 'Always smiling and happy',
+			de: 'Immer lächelnd und glücklich'
+		},
+		{
+			src: '/photos/jennie_03.JPG',
+			en: 'Full of energy and curiosity',
+			de: 'Voller Energie und Neugier'
+		},
+		{
+			src: '/photos/jennie_04.jpeg',
+			en: 'Ready for new adventures',
+			de: 'Bereit für neue Abenteuer'
+		},
+		{
+			src: '/photos/jennie_05.jpeg',
+			en: 'Our little sunshine',
+			de: 'Unser kleiner Sonnenschein'
+		},
+		{
+			src: '/photos/jennie_06.jpg',
+			en: 'Playful and joyful',
+			de: 'Verspielt und fröhlich'
+		}
+	];
 </script>
 
-<PersonPage name={t.jennieName} role={t.jennieRole} accentColor="#8B7BA8" photo="/photos/jennie.jpg">
+<PersonPage name={t.jennieName} role={t.jennieRole} accentColor="#8B7BA8" photo="/photos/jennie_02.JPG">
+	<!-- Photo Gallery -->
+	<section class="mb-12">
+		<h2
+			class="mb-6 text-2xl text-stone-800"
+			style="font-family: 'Fraunces', serif; font-weight: 500;"
+		>
+			{getLang() === 'en' ? "Jennie's World" : 'Jennies Welt'}
+		</h2>
+
+		<div class="grid gap-6 sm:grid-cols-2">
+			{#each photos as photo}
+				<div class="group overflow-hidden rounded-lg bg-white shadow-md transition-shadow hover:shadow-xl">
+					<div class="overflow-hidden">
+						<img
+							src={photo.src}
+							alt={getLang() === 'en' ? photo.en : photo.de}
+							class="w-full transition-transform duration-500 group-hover:scale-105"
+						/>
+					</div>
+					<p class="p-4 text-sm text-stone-600" style="font-family: 'Source Serif 4', serif;">
+						{getLang() === 'en' ? photo.en : photo.de}
+					</p>
+				</div>
+			{/each}
+		</div>
+	</section>
+
 	<!-- About -->
 	<section class="mb-12">
 		<h2
