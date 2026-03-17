@@ -71,9 +71,9 @@
 
 	<!-- Hello Section -->
 	<section class="relative px-6 py-20">
-		<div class="mx-auto max-w-2xl text-center">
+		<div class="mx-auto max-w-2xl">
 			<h2
-				class="mb-8 text-4xl text-stone-800"
+				class="mb-8 text-center text-4xl text-stone-800"
 				style="font-family: 'Fraunces', serif; font-weight: 400;"
 			>
 				{t.introHeading}
@@ -266,7 +266,7 @@
 					{t.whyBerlinTitle}
 				</h2>
 				<p
-					class="text-center text-lg leading-relaxed text-stone-600"
+					class="text-lg leading-relaxed text-stone-600"
 					style="font-family: 'Source Serif 4', serif;"
 				>
 					{t.whyBerlinText}
@@ -275,14 +275,31 @@
 		</div>
 	</section>
 
+	<!-- Cleanliness Section -->
+	<section class="px-6 py-16">
+		<div class="mx-auto max-w-3xl">
+			<div class="relative rounded-sm border border-stone-200 bg-white/60 p-10 backdrop-blur-sm md:p-12">
+				<h2
+					class="mb-6 text-center text-2xl text-stone-800"
+					style="font-family: 'Fraunces', serif; font-weight: 400;"
+				>
+					{t.cleanlinessTitle}
+				</h2>
+				<p
+					class="text-lg leading-relaxed text-stone-600"
+					style="font-family: 'Source Serif 4', serif;"
+				>
+					{t.cleanlinessText}
+				</p>
+			</div>
+		</div>
+	</section>
+
 	<!-- Promise Section -->
 	<section class="px-6 py-16">
-		<div class="mx-auto max-w-2xl text-center">
-			<div class="mb-6 text-5xl">
-				<span style="filter: grayscale(0.3);">&#x1F3E0;</span>
-			</div>
+		<div class="mx-auto max-w-2xl">
 			<h2
-				class="mb-6 text-3xl text-stone-800"
+				class="mb-6 text-center text-3xl text-stone-800"
 				style="font-family: 'Fraunces', serif; font-weight: 400;"
 			>
 				{t.promiseTitle}
@@ -298,8 +315,8 @@
 
 	<!-- Documents Section -->
 	<section class="px-6 py-12">
-		<div class="mx-auto max-w-xl">
-			<div class="border-y border-stone-200 py-8 text-center">
+		<div class="mx-auto max-w-2xl">
+			<div class="border-y border-stone-200 py-8">
 				<p class="text-sm tracking-wide text-stone-500" style="font-family: 'Fraunces', serif;">
 					{t.docsTitle}
 				</p>
@@ -312,9 +329,9 @@
 
 	<!-- Footer -->
 	<footer class="px-6 pt-12 pb-20">
-		<div class="mx-auto max-w-2xl text-center">
+		<div class="mx-auto max-w-2xl">
 			<h2
-				class="mb-4 text-2xl text-stone-800"
+				class="mb-4 text-center text-2xl text-stone-800"
 				style="font-family: 'Fraunces', serif; font-weight: 400;"
 			>
 				{t.contactTitle}
@@ -324,7 +341,7 @@
 			</p>
 
 			<!-- Contact Info -->
-			<div class="mb-8 flex flex-col items-center gap-3">
+			<div class="mb-8 flex flex-col gap-3">
 				<a
 					href="mailto:{t.contactEmail}"
 					class="text-stone-700 transition-colors hover:text-stone-900"
@@ -342,7 +359,7 @@
 			</div>
 
 			<!-- Decorative line -->
-			<div class="mx-auto mb-8 h-px w-24 bg-stone-300"></div>
+			<div class="mb-8 h-px w-24 bg-stone-300"></div>
 
 			<p class="text-xs tracking-widest text-stone-400" style="font-family: 'Fraunces', serif;">
 				THE KOO FAMILY &bull; 2025

@@ -121,6 +121,16 @@ export const t = {
 			: 'Berlins dynamisches Startup-Ökosystem und innovativer Geist machen es zum idealen Ort für mein Softwareunternehmen. Die Offenheit der Stadt gegenüber internationalen Unternehmern und Familien, kombiniert mit ausgezeichneten Schulen und einer familienfreundlichen Umgebung, hat uns überzeugt, dass wir hier unser neues Zuhause aufbauen möchten.';
 	},
 
+	// Cleanliness section
+	get cleanlinessTitle() {
+		return currentLang === 'en' ? 'A Clean & Caring Home' : 'Ein sauberes & gepflegtes Zuhause';
+	},
+	get cleanlinessText() {
+		return currentLang === 'en'
+			? 'With two young children who have sensitive skin, we maintain exceptionally high cleanliness standards in our home. Everything is regularly sanitized and kept spotless - from floors to surfaces to fabrics. This is not just a preference, but a necessity for our family. You can trust that we will care for your property with the same meticulous attention we give to our own living space.'
+			: 'Mit zwei kleinen Kindern, die empfindliche Haut haben, halten wir außergewöhnlich hohe Sauberkeitsstandards in unserem Zuhause. Alles wird regelmäßig desinfiziert und makellos sauber gehalten - von Böden über Oberflächen bis zu Stoffen. Dies ist nicht nur eine Vorliebe, sondern eine Notwendigkeit für unsere Familie. Sie können darauf vertrauen, dass wir Ihre Immobilie mit der gleichen sorgfältigen Aufmerksamkeit pflegen, die wir unserem eigenen Wohnraum widmen.';
+	},
+
 	// Promise section
 	get promiseTitle() {
 		return currentLang === 'en' ? 'Our Promise' : 'Unser Versprechen';
