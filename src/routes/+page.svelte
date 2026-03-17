@@ -92,10 +92,37 @@
 				{t.meetUs}
 			</h2>
 
-			<!-- Parents - Offset Layout -->
+			<!-- Family Card -->
+			<a href="/family" class="group mb-12 block">
+				<div
+					class="overflow-hidden rounded-sm bg-white transition-all duration-500 group-hover:shadow-2xl"
+					style="box-shadow: 0 10px 40px -10px rgba(0,0,0,0.1);"
+				>
+					<div class="overflow-hidden">
+						<img
+							src="/photos/family_01.jpeg"
+							alt="Koo Family"
+							class="w-full aspect-[16/9] object-cover object-top transition-transform duration-500 group-hover:scale-105"
+						/>
+					</div>
+					<div class="p-6 text-center">
+						<h3
+							class="mb-1 text-2xl text-stone-800"
+							style="font-family: 'Fraunces', serif; font-weight: 500;"
+						>
+							{t.title}
+						</h3>
+						<p class="text-stone-600" style="font-family: 'Source Serif 4', serif;">
+							{t.subtitle}
+						</p>
+					</div>
+				</div>
+			</a>
+
+			<!-- Parents -->
 			<div class="mb-12 grid gap-8 md:grid-cols-2 md:gap-12">
 				<!-- Ilmo -->
-				<a href="/ilmo" class="group md:mt-8">
+				<a href="/ilmo" class="group">
 					<div
 						class="overflow-hidden rounded-sm bg-white transition-all duration-500 group-hover:shadow-2xl"
 						style="box-shadow: 0 10px 40px -10px rgba(0,0,0,0.1);"
@@ -104,7 +131,7 @@
 							<img
 								src="/photos/ilmo_10.JPG"
 								alt={t.ilmoName}
-								class="w-full transition-transform duration-500 group-hover:scale-105"
+								class="w-full aspect-[4/3] object-cover object-top transition-transform duration-500 group-hover:scale-105"
 							/>
 						</div>
 						<div class="p-6">
@@ -143,7 +170,7 @@
 							<img
 								src="/photos/kyuree_01.jpeg"
 								alt={t.kyureeName}
-								class="w-full transition-transform duration-500 group-hover:scale-105"
+								class="w-full aspect-[4/3] object-cover transition-transform duration-500 group-hover:scale-105"
 							/>
 						</div>
 						<div class="p-6">
@@ -173,73 +200,83 @@
 				</a>
 			</div>
 
-			<!-- Kids - Smaller Cards -->
-			<div class="grid gap-6 md:grid-cols-2 md:gap-8">
+			<!-- Kids -->
+			<div class="grid gap-8 md:grid-cols-2 md:gap-12">
 				<!-- Jane -->
-				<a
-					href="/jane"
-					class="group flex overflow-hidden rounded-sm bg-white transition-all duration-500 hover:shadow-xl"
-					style="box-shadow: 0 4px 20px -4px rgba(0,0,0,0.08);"
-				>
-					<div class="w-32 flex-shrink-0 overflow-hidden">
-						<img
-							src="/photos/jane.jpg"
-							alt="Jane Koo"
-							class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
-						/>
-					</div>
-					<div class="flex flex-col justify-between p-5">
-						<div>
-							<h3 class="mb-1 text-xl text-stone-800" style="font-family: 'Fraunces', serif; font-weight: 500;">
+				<a href="/jane" class="group">
+					<div
+						class="overflow-hidden rounded-sm bg-white transition-all duration-500 group-hover:shadow-2xl"
+						style="box-shadow: 0 10px 40px -10px rgba(0,0,0,0.1);"
+					>
+						<div class="overflow-hidden">
+							<img
+								src="/photos/jane.jpg"
+								alt="Jane Koo"
+								class="w-full aspect-[4/3] object-cover transition-transform duration-500 group-hover:scale-105"
+							/>
+						</div>
+						<div class="p-6">
+							<h3
+								class="mb-1 text-2xl text-stone-800"
+								style="font-family: 'Fraunces', serif; font-weight: 500;"
+							>
 								{t.janeName}
 							</h3>
-							<p class="mb-2 text-xs tracking-wide" style="font-family: 'Fraunces', serif; color: #5B8A9A;">
+							<p
+								class="mb-4 text-sm tracking-wide"
+								style="font-family: 'Fraunces', serif; color: #5B8A9A;"
+							>
 								{t.janeRole}
 							</p>
-							<p class="line-clamp-2 text-sm text-stone-600" style="font-family: 'Source Serif 4', serif;">
+							<p class="mb-4 line-clamp-3 text-stone-600" style="font-family: 'Source Serif 4', serif;">
 								{t.janeDesc}
 							</p>
+							<span
+								class="inline-block border-b border-stone-400 text-sm text-stone-600 transition-colors group-hover:border-stone-800 group-hover:text-stone-800"
+								style="font-family: 'Fraunces', serif;"
+							>
+								{t.seeMore} &rarr;
+							</span>
 						</div>
-						<span
-							class="mt-3 inline-block self-start border-b border-stone-400 text-sm text-stone-600 transition-colors group-hover:border-stone-800 group-hover:text-stone-800"
-							style="font-family: 'Fraunces', serif;"
-						>
-							{t.seeMore} &rarr;
-						</span>
 					</div>
 				</a>
 
 				<!-- Jennie -->
-				<a
-					href="/jennie"
-					class="group flex overflow-hidden rounded-sm bg-white transition-all duration-500 hover:shadow-xl"
-					style="box-shadow: 0 4px 20px -4px rgba(0,0,0,0.08);"
-				>
-					<div class="w-32 flex-shrink-0 overflow-hidden">
-						<img
-							src="/photos/jennie.jpg"
-							alt="Jennie Koo"
-							class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
-						/>
-					</div>
-					<div class="flex flex-col justify-between p-5">
-						<div>
-							<h3 class="mb-1 text-xl text-stone-800" style="font-family: 'Fraunces', serif; font-weight: 500;">
+				<a href="/jennie" class="group">
+					<div
+						class="overflow-hidden rounded-sm bg-white transition-all duration-500 group-hover:shadow-2xl"
+						style="box-shadow: 0 10px 40px -10px rgba(0,0,0,0.1);"
+					>
+						<div class="overflow-hidden">
+							<img
+								src="/photos/jennie_02.JPG"
+								alt="Jennie Koo"
+								class="w-full aspect-[4/3] object-cover transition-transform duration-500 group-hover:scale-105"
+							/>
+						</div>
+						<div class="p-6">
+							<h3
+								class="mb-1 text-2xl text-stone-800"
+								style="font-family: 'Fraunces', serif; font-weight: 500;"
+							>
 								{t.jennieName}
 							</h3>
-							<p class="mb-2 text-xs tracking-wide" style="font-family: 'Fraunces', serif; color: #8B7BA8;">
+							<p
+								class="mb-4 text-sm tracking-wide"
+								style="font-family: 'Fraunces', serif; color: #8B7BA8;"
+							>
 								{t.jennieRole}
 							</p>
-							<p class="line-clamp-2 text-sm text-stone-600" style="font-family: 'Source Serif 4', serif;">
+							<p class="mb-4 line-clamp-3 text-stone-600" style="font-family: 'Source Serif 4', serif;">
 								{t.jennieDesc}
 							</p>
+							<span
+								class="inline-block border-b border-stone-400 text-sm text-stone-600 transition-colors group-hover:border-stone-800 group-hover:text-stone-800"
+								style="font-family: 'Fraunces', serif;"
+							>
+								{t.seeMore} &rarr;
+							</span>
 						</div>
-						<span
-							class="mt-3 inline-block self-start border-b border-stone-400 text-sm text-stone-600 transition-colors group-hover:border-stone-800 group-hover:text-stone-800"
-							style="font-family: 'Fraunces', serif;"
-						>
-							{t.seeMore} &rarr;
-						</span>
 					</div>
 				</a>
 			</div>
