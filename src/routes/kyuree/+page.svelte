@@ -54,7 +54,7 @@
 	];
 </script>
 
-<PersonPage name={t.kyureeName} role={t.kyureeRole} accentColor="#B5838D" photo="/photos/kyuree_01.jpeg">
+<PersonPage name={t.kyureeName} role={t.kyureeRole} accentColor="#B5838D" photo="/photos/kyuree_00.jpeg">
 	<!-- Personal Gallery -->
 	<section class="mb-12">
 		<h2

@@ -168,7 +168,7 @@
 					>
 						<div class="overflow-hidden">
 							<img
-								src="/photos/kyuree_01.jpeg"
+								src="/photos/kyuree_00.jpeg"
 								alt={t.kyureeName}
 								class="w-full aspect-[4/3] object-cover transition-transform duration-500 group-hover:scale-105"
 							/>
