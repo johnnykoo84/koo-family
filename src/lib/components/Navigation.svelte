@@ -42,6 +42,15 @@
 
 			<!-- Desktop Nav -->
 			<div class="hidden items-center gap-6 md:flex">
+				<a
+					href="/"
+					class="text-sm text-stone-600 transition-colors hover:text-stone-900"
+					class:text-stone-900={$page.url.pathname === '/'}
+					class:font-medium={$page.url.pathname === '/'}
+					style="font-family: 'Fraunces', serif;"
+				>
+					{t.navHome}
+				</a>
 				{#each familyMembers as member}
 					<a
 						href={member.path}

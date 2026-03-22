@@ -32,6 +32,21 @@
 			src: '/photos/jennie_06.jpg',
 			en: 'Playful and joyful',
 			de: 'Verspielt und fröhlich'
+		},
+		{
+			src: '/photos/jennie_10.jpeg',
+			en: 'Growing up so fast',
+			de: 'Wächst so schnell'
+		},
+		{
+			src: '/photos/jennie_11.jpeg',
+			en: 'Sweet moments',
+			de: 'Süße Momente'
+		},
+		{
+			src: '/photos/jennie_12.jpeg',
+			en: 'Full of wonder',
+			de: 'Voller Staunen'
 		}
 	];
 </script>

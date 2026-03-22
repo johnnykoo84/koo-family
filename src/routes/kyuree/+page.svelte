@@ -4,10 +4,24 @@
 
 	const personalPhotos = [
 		{ src: '/photos/kyuree_01.jpeg' },
+		{ src: '/photos/kyuree_jennie.jpeg' },
 		{ src: '/photos/kyuree_03.JPG' },
 		{ src: '/photos/kyuree_04.JPG' },
 		{ src: '/photos/kyuree_05.JPG' },
 		{ src: '/photos/kyuree_06.jpeg' }
+	];
+
+	const brehaPhotos = [
+		{ src: '/photos/kyuree_breha_00.png', isLogo: true },
+		{ src: '/photos/kyuree_breha_01.png' },
+		{ src: '/photos/kyuree_breha_02.png' },
+		{ src: '/photos/kyuree_breha_03.png' },
+		{ src: '/photos/kyuree_breha_04.jpeg' },
+		{ src: '/photos/kyuree_breha_05.png' }
+	];
+
+	const septemberPhotos = [
+		{ src: '/photos/kyuree_september_00.jpeg', isLogo: true }
 	];
 
 	const photos = [
@@ -147,7 +161,29 @@
 		</div>
 	</section>
 
-	<!-- Photo Gallery -->
+	<!-- Breha Collection -->
+	<section class="mb-12">
+		<h2
+			class="mb-6 text-2xl text-stone-800"
+			style="font-family: 'Fraunces', serif; font-weight: 500;"
+		>
+			{getLang() === 'en' ? 'Breha Collection' : 'Breha Kollektion'}
+		</h2>
+
+		<div class="grid gap-4 grid-cols-2 sm:grid-cols-3">
+			{#each brehaPhotos as photo}
+				<div class="overflow-hidden rounded-lg shadow-md {photo.isLogo ? 'col-span-2 sm:col-span-1' : ''}">
+					<img
+						src={photo.src}
+						alt="Breha"
+						class="w-full"
+					/>
+				</div>
+			{/each}
+		</div>
+	</section>
+
+	<!-- September Nuvo Collection -->
 	<section class="mb-12">
 		<h2
 			class="mb-6 text-2xl text-stone-800"
@@ -156,7 +192,19 @@
 			{getLang() === 'en' ? 'September Nuvo Collection' : 'September Nuvo Kollektion'}
 		</h2>
 
-		<div class="grid gap-6 sm:grid-cols-2">
+		<div class="grid gap-4 grid-cols-2 sm:grid-cols-3">
+			{#each septemberPhotos as photo}
+				<div class="overflow-hidden rounded-lg shadow-md {photo.isLogo ? 'col-span-2 sm:col-span-1' : ''}">
+					<img
+						src={photo.src}
+						alt="September Nuvo"
+						class="w-full"
+					/>
+				</div>
+			{/each}
+		</div>
+
+		<div class="mt-6 grid gap-6 sm:grid-cols-2">
 			{#each photos as photo}
 				<div class="group overflow-hidden rounded-lg bg-white shadow-md transition-shadow hover:shadow-xl">
 					<div class="overflow-hidden">

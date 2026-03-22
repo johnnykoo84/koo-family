@@ -43,7 +43,7 @@
 			</p>
 
 			<!-- Family Photo - Polaroid Style -->
-			<div class="relative mx-auto mt-16 max-w-sm">
+			<div class="relative mx-auto mt-16 max-w-xl">
 				<div
 					class="rotate-[-2deg] transform rounded-sm bg-white p-3 pb-14 shadow-xl transition-transform duration-500 hover:rotate-0"
 					style="box-shadow: 0 25px 50px -12px rgba(0,0,0,0.15), 0 0 0 1px rgba(0,0,0,0.05);"
@@ -129,7 +129,7 @@
 					>
 						<div class="overflow-hidden">
 							<img
-								src="/photos/ilmo_10.JPG"
+								src="/photos/ilmo_07.JPG"
 								alt={t.ilmoName}
 								class="w-full aspect-[4/3] object-cover object-top transition-transform duration-500 group-hover:scale-105"
 							/>
@@ -249,7 +249,7 @@
 					>
 						<div class="overflow-hidden">
 							<img
-								src="/photos/jennie_02.JPG"
+								src="/photos/jennie_12.jpeg"
 								alt="Jennie Koo"
 								class="w-full aspect-[4/3] object-cover transition-transform duration-500 group-hover:scale-105"
 							/>
