@@ -398,7 +398,7 @@
 			<div class="mb-8 h-px w-24 bg-stone-300"></div>
 
 			<p class="text-xs tracking-widest text-stone-400" style="font-family: 'Fraunces', serif;">
-				THE KOO FAMILY &bull; 2025
+				THE KOO FAMILY &bull; {new Date().getFullYear()}
 			</p>
 		</div>
 	</footer>
